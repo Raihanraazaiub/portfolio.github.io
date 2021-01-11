@@ -224,7 +224,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="https://formspree.io/f/xrgorynp" method="POST" id="my-form" >
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Name" required>
@@ -240,19 +240,12 @@
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button">
-                            <button class="btn btn-raised btn-block btn-danger">Post &rarr;</button>
+                            <button class="submit">Send &rarr;</button>
                         </div>
                     </form>
-                    <div id="error_message" style="width:100%; height:100%; display:none; ">
-                                    <h4>
-                                        Error
-                                    </h4>
-                                    Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
-</div>
+                    
                 </div>
+                <div id="status"></div>
             </div>
         </div>
     </section>
@@ -263,5 +256,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
