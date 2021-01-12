@@ -587,7 +587,7 @@ section .title::after{
   display: inline-flex;
 }
 .wrapper .icon{
-  margin: auto 0.5px;
+  margin: 0;
   text-align: center;
   cursor: pointer;
   display: flex;
