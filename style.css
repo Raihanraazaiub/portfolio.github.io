@@ -585,7 +585,9 @@ section .title::after{
 /*Social Media Icon */
 .wrapper{
   display: inline-flex;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .wrapper .icon{
   margin: 0 20px;
