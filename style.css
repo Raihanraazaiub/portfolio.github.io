@@ -603,7 +603,7 @@ section .title::after{
   display: block;
   height: 60px;
   width: 60px;
-  background: #46C1F6;
+  background: #111;
   border-radius: 50%;
   position: relative;
   z-index: 2;
