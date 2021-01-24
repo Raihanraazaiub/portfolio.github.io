@@ -1,0 +1,29 @@
+/* Widget Label */
+.Label .widget-content{font-size:90%;color:#161617}
+.Label ul, .Label .cloud, .Label .cloud .label-all{display:flex;flex-wrap:wrap}
+.Label li{width:calc(50% - 12.5px);margin-bottom:13px}
+.Label li:nth-child(2n+1){margin-right:25px}
+.Label li > *{display:flex;align-items:center;color:inherit}
+.Label li > * svg{flex-shrink:0;width:20px;height:20px;margin-left:5px;fill:#767676}
+.Label li > * svg.line{fill:none;stroke:#767676}
+.Label li > a:hover svg{fill:#3b5998}
+.Label li > a:hover svg.line{fill:none;stroke:#3b5998}
+.Label li > div > .label-title{color:#767676}
+.Label li:nth-child(2n+1).label-show{margin:0}
+.Label .label-show{width:100%;margin:0}
+.Label .label-show ul, .Label .cloud .label-all{width:100%;max-height:0;overflow:hidden;-webkit-transition:all .4s ease;transition:all .4s ease}
+.Label .label-show label{display:inline-flex;align-items:baseline;margin-top:4px;padding:4px 0;color:#3b5998}
+.Label .label-show label:before{content: attr(data-show)}
+.Label .label-show label:after{content:attr(data-text);margin-left:5px}
+.Label .label-show .hidden{display:none}
+.Label .label-input:checked + .label-all ul, .Label .cloud .label-input:checked + .label-all{max-height:100vh}
+.Label .label-input:checked ~ label:before{content: attr(data-hide)}
+.Label .label-input:checked ~ label:after{visibility:hidden}
+.Label .label-title{margin-right:auto;padding-right:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.Label .label-count, .Label .label-show label:after{flex-shrink:0;font-size:11px;color:#767676}
+.Label .cloud > *, .Label .cloud .label-all > *{display:block}
+.Label .cloud .label-name, .Blog .post .post-labels a{display:flex;justify-content:space-between;margin:0 8px 8px 0;padding:6px 18px;font-size:12px;border:1px solid rgba(230,230,230,1);border-radius:3px;color:#767676;line-height:20px}
+.Label .cloud .label-size > *:hover, .Label .cloud div.label-name, .Blog .post-labels a:hover{border-color:#3b5998}
+.Label .cloud .label-size > *:hover .label-count, .Label .cloud div.label-name .label-count{color:#297dcf}
+
+.header .header-inner h1::first-letter

@@ -1,0 +1,47 @@
+<!-- Constants -->
+<Variable name="fontBody" description="Nunito Sans" type="font" default="Nunito Sans, sans-serif" hideEditor="true" value="Nunito Sans, sans-serif"/>
+
+<Group description="Backgrounds">
+<Variable name="body.background" description="Background" color="$(body.backgrounds.color)" type="background" default="$(color) none repeat scroll center center"  value="$(color) url() no-repeat scroll center center"/>
+<Variable name="body.backgrounds.color" description="Body backgrounds color" type="color" default="#f7f7fc"  value="transparent"/>
+<Variable name="body.text.color" description="Color" type="color" default="#4d4d4d"  value="#4d4d4d"/>
+<Variable name="body.background.color" description="Address Bar Colors (Mobile Only)" type="color" default="#fff" value="#ffffff"/>
+<Variable name="body.link.color" description="Link color" type="color" default="$(link.colors)"  value="#e94c39"/>
+</Group> 
+
+<Group description="Posts">
+<Variable name="posts.title.color" description="Post title color" type="color" default="$(main.colors)"  value="#161617"/>
+<Variable name="posts.text.color" description="Post text color" type="color" default="$(text.colors)"  value="#161617"/>
+<Variable name="posts.icons.color" description="Post info color" type="color" default="$(main.colors)" value="#161617"/>
+<Variable name="posts.background.color" description="Post background color" type="color" default="#f7f7fc"  value="transparent"/>
+</Group>
+
+<Group description="Tabs text" selector="div.widget.PageList">
+<Variable name="tabs.font" description="Font" type="font" default="$(fontBody)" value="400 14px &#39;Lato&#39;, sans-serif"/>
+<Variable name="tabs.color" description="Text color" type="color" default="#4d4d4d"  value="#4d4d4d"/>
+<Variable name="tabs.selected.color" description="Selected color" type="color" default="#fff"  value="#ffffff"/>
+<Variable name="tabs.overflow.background.color" description="Popup background color" type="color" default="$(posts.background.color)"  value="#ffffff"/>
+<Variable name="tabs.overflow.color" description="Popup text color" type="color" default="$(text.colors)"  value="#4d4d4d"/>
+<Variable name="tabs.overflow.selected.color" description="Popup selected color" type="color" default="$(main.colors)"  value="#161617"/>
+<Variable name="labels.background.color" description="Labels background color" type="color" default="#fff" value="#ffffff"/>
+<Variable name="blog.title.font" description="Blog title font" type="font" default="$(fontBody)" value="400 14px &#39;Lato&#39;, sans-serif"/>
+<Variable name="blog.title.color" description="Blog title color" type="color" default="#fff" value="#ffffff"/>
+</Group>
+
+<Group description="Width Content">
+<Variable name="max.width" description="Max Width Content" type="length" max="1024px" default="1024px"  value="1024px"/>
+<Variable name="side.width" description="Sidebar Width" type="length" max="300px" default="300px"  value="300px"/>
+</Group>
+
+<Group description="Colors">
+<Variable name="main.colors" description="Main Colors" type="color" default="#161617" value="#161617"/>
+<Variable name="link.colors" description="Link Colors" type="color" default="#e94c39" value="#e94c39"/>
+<Variable name="link.hover.colors" description="Link Hover Colors" type="color" default="#989b9f" value="#989b9f"/>
+<Variable name="text.colors" description="Text Colors" type="color" default="#4d4d4d" value="#4d4d4d"/>
+<Variable name="alt.text.colors" description="Second Text Colors" type="color" default="#989b9f" value="#989b9f"/>
+</Group>
+
+<Group description="Fonts">
+<Variable name="body.font" description="Font" type="font" default="$(fontBody)" value="Nunito Sans, sans-serif"/>
+<Variable name="body.text.font" description="Text Font" type="font" default="$(fontBody)" value="Nunito Sans, sans-serif"/>
+</Group>
